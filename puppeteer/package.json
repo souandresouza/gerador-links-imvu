@@ -1,0 +1,10 @@
+{
+  "name": "try-on-puppeteer",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node try-on.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.1.1"
+  }
+}
