@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Links IMVU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Links IMVU</h1>
+        <div class="input-group">
+            <input type="text" id="linkInput" placeholder="Cole o link aqui">
+            <button onclick="processarLink()">Gerar Link</button>
+        </div>
+        <div class="resultado">
+            <h2>Link Gerado</h2>
+            <div id="idsExtraidos"></div>
+        </div>
+        <div class="logs">
+            <h2>Logs</h2>
+            <div id="logs"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
