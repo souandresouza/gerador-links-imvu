@@ -1,0 +1,126 @@
+/* Reset básico para evitar inconsistências entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo global da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container principal */
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Largura máxima para telas grandes */
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* Grupo de entrada (input + botão) */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Campo de entrada */
+input[type="text"] {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Botão */
+button {
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Seções de resultado e logs */
+.resultado, .logs {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Links gerados */
+#idsExtraidos a {
+  word-break: break-all;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#idsExtraidos a:hover {
+  text-decoration: underline;
+}
+
+/* Logs */
+#logs p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  h1 {
+      font-size: 20px;
+  }
+
+  input[type="text"], button {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  h2 {
+      font-size: 16px;
+  }
+
+  #idsExtraidos a, #logs p {
+      font-size: 12px;
+  }
+}
