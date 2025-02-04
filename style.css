@@ -8,8 +8,8 @@
 /* Estilo global da página */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #121212; /* Fundo escuro */
+  color: #e0e0e0; /* Texto claro */
   line-height: 1.6;
   display: flex;
   justify-content: center;
@@ -20,10 +20,10 @@ body {
 
 /* Container principal */
 .container {
-  background: white;
+  background: #1e1e1e; /* Fundo escuro para o container */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra mais escura */
   width: 100%;
   max-width: 500px; /* Largura máxima para telas grandes */
 }
@@ -33,7 +33,7 @@ h1 {
   text-align: center;
   font-size: 24px;
   margin-bottom: 20px;
-  color: #007bff;
+  color: #bb86fc; /* Cor roxa clara para destaque */
 }
 
 /* Grupo de entrada (input + botão) */
@@ -48,14 +48,15 @@ h1 {
 input[type="text"] {
   padding: 12px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #444; /* Borda mais clara */
   border-radius: 5px;
+  background-color: #333; /* Fundo escuro para inputs */
+  color: #e0e0e0; /* Texto claro */
   width: 100%;
   transition: border-color 0.3s ease;
 }
-
 input[type="text"]:focus {
-  border-color: #007bff;
+  border-color: #bb86fc; /* Destaque roxo ao focar */
   outline: none;
 }
 
@@ -64,15 +65,14 @@ button {
   padding: 12px;
   font-size: 16px;
   color: white;
-  background-color: #007bff;
+  background-color: #bb86fc; /* Botão roxo */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 button:hover {
-  background-color: #0056b3;
+  background-color: #9c27b0; /* Tom mais escuro ao passar o mouse */
 }
 
 /* Seções de resultado e logs */
@@ -83,17 +83,16 @@ button:hover {
 h2 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: #555;
+  color: #bb86fc; /* Cabeçalhos roxos */
 }
 
 /* Links gerados */
 #idsExtraidos a {
   word-break: break-all;
-  color: #007bff;
+  color: #bb86fc; /* Links roxos */
   text-decoration: none;
   font-size: 14px;
 }
-
 #idsExtraidos a:hover {
   text-decoration: underline;
 }
@@ -101,7 +100,7 @@ h2 {
 /* Logs */
 #logs p {
   font-size: 14px;
-  color: #666;
+  color: #b0bec5; /* Texto dos logs em tom claro */
   margin-bottom: 5px;
 }
 
@@ -110,16 +109,13 @@ h2 {
   h1 {
       font-size: 20px;
   }
-
   input[type="text"], button {
       font-size: 14px;
       padding: 10px;
   }
-
   h2 {
       font-size: 16px;
   }
-
   #idsExtraidos a, #logs p {
       font-size: 12px;
   }
